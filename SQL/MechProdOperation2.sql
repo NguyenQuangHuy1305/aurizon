@@ -1,0 +1,5 @@
+SELECT TOP (1000) [MechProdReportTypeKey]
+      ,[MechProdReportTypeDescr]
+      ,[MechProdReportGroup]
+      ,[MechProdReportGroupDescr]
+  FROM [myANALYTICS_SP].[config.belowrail.asset.track.rail].[MechProdReportType]
