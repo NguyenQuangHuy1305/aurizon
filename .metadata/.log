@@ -1,0 +1,333 @@
+!SESSION 2024-05-10 09:46:24.250 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_172
+java.vendor=SAP AG
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_AU
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.equinox.security 1 0 2024-05-10 09:47:05.430
+!MESSAGE New keyring password generated. 
+
+!ENTRY com.sap.ndb.studio.navigator 4 4 2024-05-10 09:50:16.330
+!MESSAGE Error checking connection
+!STACK 0
+com.sap.ndb.studio.jdbc.JDBCConnectionStatus: Database connection is not available; see error log
+	at com.sap.ndb.studio.jdbc.JDBCPlugin.createConnection(JDBCPlugin.java:281)
+	at com.sap.ndb.studio.navigator.wizards.newsapsystem.NewSAPSystemWizard$1$1.call(NewSAPSystemWizard.java:308)
+	at com.sap.ndb.studio.navigator.wizards.newsapsystem.NewSAPSystemWizard$1$1.call(NewSAPSystemWizard.java:1)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:836)
+Caused by: com.sap.db.jdbc.exceptions.JDBCDriverException: SAP DBTech JDBC: Cannot connect to jdbc:sap://hdbprdpan002:30115 [Cannot connect to host hdbprdpan002:30115 [Connection refused: connect (local port 54366 to address 0:0:0:0:0:0:0:0, remote port 30115 to address 10.89.152.196 (HDBPRDPAN001.internal.qr.com.au))], -813.].
+	at com.sap.db.jdbc.exceptions.SQLExceptionSapDB._newInstance(SQLExceptionSapDB.java:126)
+	at com.sap.db.jdbc.exceptions.SQLExceptionSapDB._newInstance(SQLExceptionSapDB.java:203)
+	at com.sap.db.jdbc.exceptions.SQLExceptionSapDB.newInstance(SQLExceptionSapDB.java:50)
+	at com.sap.db.jdbc.DriverSapDB._connect(DriverSapDB.java:1464)
+	at com.sap.db.jdbc.DriverSapDB.connect(DriverSapDB.java:1145)
+	at com.sap.ndb.studio.jdbc.JDBCConnection$1.run(JDBCConnection.java:172)
+
+!ENTRY com.sap.ndb.studio.navigator 4 4 2024-05-10 09:51:42.584
+!MESSAGE Error checking connection
+!STACK 0
+com.sap.ndb.studio.jdbc.JDBCConnectionStatus: SAP DBTech JDBC: Cannot connect to jdbc:sap://hdbprdpan002:30141:30115 [Unknown host hdbprdpan002:30141:30115 [hdbprdpan002:30141], -709].
+	at com.sap.ndb.studio.jdbc.JDBCPlugin.createConnection(JDBCPlugin.java:281)
+	at com.sap.ndb.studio.navigator.wizards.newsapsystem.NewSAPSystemWizard$1$1.call(NewSAPSystemWizard.java:308)
+	at com.sap.ndb.studio.navigator.wizards.newsapsystem.NewSAPSystemWizard$1$1.call(NewSAPSystemWizard.java:1)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:836)
+Caused by: com.sap.db.jdbc.exceptions.JDBCDriverException: SAP DBTech JDBC: Cannot connect to jdbc:sap://hdbprdpan002:30141:30115 [Unknown host hdbprdpan002:30141:30115 [hdbprdpan002:30141], -709].
+	at com.sap.db.jdbc.exceptions.SQLExceptionSapDB._newInstance(SQLExceptionSapDB.java:126)
+	at com.sap.db.jdbc.exceptions.SQLExceptionSapDB._newInstance(SQLExceptionSapDB.java:203)
+	at com.sap.db.jdbc.exceptions.SQLExceptionSapDB.newInstance(SQLExceptionSapDB.java:50)
+	at com.sap.db.jdbc.DriverSapDB._connect(DriverSapDB.java:1464)
+	at com.sap.db.jdbc.DriverSapDB.connect(DriverSapDB.java:1145)
+	at com.sap.ndb.studio.jdbc.JDBCConnection$1.run(JDBCConnection.java:172)
+
+!ENTRY com.sap.ndb.studio.navigator 4 4 2024-05-10 09:51:55.480
+!MESSAGE Error checking connection
+!STACK 0
+com.sap.ndb.studio.jdbc.JDBCConnectionStatus: Database connection is not available; see error log
+	at com.sap.ndb.studio.jdbc.JDBCPlugin.createConnection(JDBCPlugin.java:281)
+	at com.sap.ndb.studio.navigator.wizards.newsapsystem.NewSAPSystemWizard$1$1.call(NewSAPSystemWizard.java:308)
+	at com.sap.ndb.studio.navigator.wizards.newsapsystem.NewSAPSystemWizard$1$1.call(NewSAPSystemWizard.java:1)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:836)
+Caused by: com.sap.db.jdbc.exceptions.JDBCDriverException: SAP DBTech JDBC: Cannot connect to jdbc:sap://hdbprdpan002:30141 [SAP DBTech JDBC: [2]: general error: SYSTEMDB not connected].
+	at com.sap.db.jdbc.exceptions.SQLExceptionSapDB._newInstance(SQLExceptionSapDB.java:126)
+	at com.sap.db.jdbc.exceptions.SQLExceptionSapDB._newInstance(SQLExceptionSapDB.java:203)
+	at com.sap.db.jdbc.exceptions.SQLExceptionSapDB.newInstance(SQLExceptionSapDB.java:50)
+	at com.sap.db.jdbc.DriverSapDB._connect(DriverSapDB.java:1464)
+	at com.sap.db.jdbc.DriverSapDB.connect(DriverSapDB.java:1145)
+	at com.sap.ndb.studio.jdbc.JDBCConnection$1.run(JDBCConnection.java:172)
+
+!ENTRY com.sap.ndb.studio.navigator 4 4 2024-05-10 09:54:42.405
+!MESSAGE Error checking connection
+!STACK 0
+com.sap.ndb.studio.jdbc.JDBCConnectionStatus: Database connection is not available; see error log
+	at com.sap.ndb.studio.jdbc.JDBCPlugin.createConnection(JDBCPlugin.java:281)
+	at com.sap.ndb.studio.navigator.wizards.newsapsystem.NewSAPSystemWizard$1$1.call(NewSAPSystemWizard.java:308)
+	at com.sap.ndb.studio.navigator.wizards.newsapsystem.NewSAPSystemWizard$1$1.call(NewSAPSystemWizard.java:1)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:836)
+Caused by: com.sap.db.jdbc.exceptions.JDBCDriverException: SAP DBTech JDBC: Cannot connect to jdbc:sap://hdbprdpan002:30115 [Cannot connect to host hdbprdpan002:30115 [Connection refused: connect (local port 54486 to address 0:0:0:0:0:0:0:0, remote port 30115 to address 10.89.152.196 (HDBPRDPAN001.internal.qr.com.au))], -813.].
+	at com.sap.db.jdbc.exceptions.SQLExceptionSapDB._newInstance(SQLExceptionSapDB.java:126)
+	at com.sap.db.jdbc.exceptions.SQLExceptionSapDB._newInstance(SQLExceptionSapDB.java:203)
+	at com.sap.db.jdbc.exceptions.SQLExceptionSapDB.newInstance(SQLExceptionSapDB.java:50)
+	at com.sap.db.jdbc.DriverSapDB._connect(DriverSapDB.java:1464)
+	at com.sap.db.jdbc.DriverSapDB.connect(DriverSapDB.java:1145)
+	at com.sap.ndb.studio.jdbc.JDBCConnection$1.run(JDBCConnection.java:172)
+
+!ENTRY com.sap.ndb.studio.navigator 4 1 2024-05-10 09:54:46.918
+!MESSAGE [PH1 hdbprdpan002 01] Error while refreshing system
+!SUBENTRY 1 com.sap.ndb.studio.navigator 4 4 2024-05-10 09:54:46.918
+!MESSAGE Database connection is not available; see error log
+!STACK 0
+com.sap.ndb.studio.jdbc.JDBCConnectionStatus: Database connection is not available; see error log
+	at com.sap.ndb.studio.jdbc.JDBCPlugin.createConnection(JDBCPlugin.java:281)
+	at com.sap.ndb.studio.navigator.operations.SAPSystemObjectUpdate.executeTryJDBC(SAPSystemObjectUpdate.java:283)
+	at com.sap.ndb.studio.navigator.operations.SAPSystemObjectUpdate.execute(SAPSystemObjectUpdate.java:103)
+	at com.sap.ndb.studio.navigator.operations.UpdateSAPSystemOperation.execute(UpdateSAPSystemOperation.java:73)
+	at com.sap.ndb.studio.datamodel.controler.DataModelOperationJob.run(DataModelOperationJob.java:70)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
+Caused by: com.sap.db.jdbc.exceptions.JDBCDriverException: SAP DBTech JDBC: Cannot connect to jdbc:sap://hdbprdpan002:30115 [Cannot connect to host hdbprdpan002:30115 [Connection refused: connect (local port 54491 to address 0:0:0:0:0:0:0:0, remote port 30115 to address 10.89.152.196 (HDBPRDPAN001.internal.qr.com.au))], -813.].
+	at com.sap.db.jdbc.exceptions.SQLExceptionSapDB._newInstance(SQLExceptionSapDB.java:126)
+	at com.sap.db.jdbc.exceptions.SQLExceptionSapDB._newInstance(SQLExceptionSapDB.java:203)
+	at com.sap.db.jdbc.exceptions.SQLExceptionSapDB.newInstance(SQLExceptionSapDB.java:50)
+	at com.sap.db.jdbc.DriverSapDB._connect(DriverSapDB.java:1464)
+	at com.sap.db.jdbc.DriverSapDB.connect(DriverSapDB.java:1145)
+	at com.sap.ndb.studio.jdbc.JDBCConnection$1.run(JDBCConnection.java:172)
+
+!ENTRY com.sap.ndb.studio.backup 4 4 2024-05-10 09:54:46.932
+!MESSAGE Could not open connection to 'PH1 hdbprdpan002 01'
+!STACK 0
+java.util.concurrent.ExecutionException: com.sap.ndb.studio.jdbc.JDBCConnectionStatus: Database connection is not available; see error log
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:206)
+	at com.sap.ndb.studio.backup.BackupConnectionHandler.openConnection(BackupConnectionHandler.java:147)
+	at com.sap.ndb.studio.backup.BackupConnectionHandler.getConnection(BackupConnectionHandler.java:180)
+	at com.sap.ndb.studio.backup.BackupConnectionHandler.getConnection(BackupConnectionHandler.java:125)
+	at com.sap.ndb.studio.backup.BackupWorkbenchAdapter$BackupTreeModelBuilder$1.call(BackupWorkbenchAdapter.java:213)
+	at com.sap.ndb.studio.backup.BackupWorkbenchAdapter$BackupTreeModelBuilder$1.call(BackupWorkbenchAdapter.java:1)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:836)
+Caused by: com.sap.ndb.studio.jdbc.JDBCConnectionStatus: Database connection is not available; see error log
+	at com.sap.ndb.studio.jdbc.JDBCPlugin.createConnection(JDBCPlugin.java:281)
+	at com.sap.ndb.studio.jdbc.JDBCPlugin.createConnection(JDBCPlugin.java:307)
+	at com.sap.ndb.studio.backup.BackupConnectionHandler$2.call(BackupConnectionHandler.java:140)
+	at com.sap.ndb.studio.backup.BackupConnectionHandler$2.call(BackupConnectionHandler.java:1)
+	... 4 more
+Caused by: com.sap.db.jdbc.exceptions.JDBCDriverException: SAP DBTech JDBC: Cannot connect to jdbc:sap://hdbprdpan002:30115 [Cannot connect to host hdbprdpan002:30115 [Connection refused: connect (local port 54492 to address 0:0:0:0:0:0:0:0, remote port 30115 to address 10.89.152.196 (HDBPRDPAN001.internal.qr.com.au))], -813.].
+	at com.sap.db.jdbc.exceptions.SQLExceptionSapDB._newInstance(SQLExceptionSapDB.java:126)
+	at com.sap.db.jdbc.exceptions.SQLExceptionSapDB._newInstance(SQLExceptionSapDB.java:203)
+	at com.sap.db.jdbc.exceptions.SQLExceptionSapDB.newInstance(SQLExceptionSapDB.java:50)
+	at com.sap.db.jdbc.DriverSapDB._connect(DriverSapDB.java:1464)
+	at com.sap.db.jdbc.DriverSapDB.connect(DriverSapDB.java:1145)
+	at com.sap.ndb.studio.jdbc.JDBCConnection$1.run(JDBCConnection.java:172)
+
+!ENTRY org.eclipse.jface 2 0 2024-05-10 10:21:50.396
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2024-05-10 10:21:50.396
+!MESSAGE A conflict occurred for CTRL+C:
+Binding(CTRL+C,
+	ParameterizedCommand(Command(com.sap.ndb.studio.modeler.actions.CtrlCCopyObject,Copy,
+		,
+		Category(com.sap.ndb.studio.bi.uibindings.category,Modeler Keys,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@30424294,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	com.sap.ndb.studio.navigator.context.navigatorview,,,system)
+Binding(CTRL+C,
+	ParameterizedCommand(Command(com.sap.ndb.studio.bi.uibindings.command.copyNode,Copy Node,
+		,
+		Category(com.sap.ndb.studio.bi.uibindings.category,Modeler Keys,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@6976e66f,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	com.sap.ndb.studio.view.ui.panes.Scenario.context,,,system)
+Binding(CTRL+C,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.copy,Copy,
+		Copy the selection to the clipboard,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@4c06931b,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.dialogAndWindow,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2024-05-10 10:21:50.396
+!MESSAGE A conflict occurred for CTRL+F:
+Binding(CTRL+F,
+	ParameterizedCommand(Command(com.sap.ndb.studio.modeler.find,Find,
+		,
+		Category(com.sap.ndb.studio.modeler.navigator,Modeler Navigator,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@202f4732,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	com.sap.ndb.studio.navigator.context.navigatorview,,,system)
+Binding(CTRL+F,
+	ParameterizedCommand(Command(com.sap.ndb.studio.bi.view.commands.find,Find Objects,
+		,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@2dbf741,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	com.sap.ndb.studio.view.ui.editors.ViewMultiPageEditor.context,,,system)
+Binding(CTRL+F,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.findReplace,Find and Replace,
+		Find and replace text,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@5c403ceb,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2024-05-10 10:21:50.396
+!MESSAGE A conflict occurred for CTRL+SHIFT+P:
+Binding(CTRL+SHIFT+P,
+	ParameterizedCommand(Command(com.sap.ndb.studio.modeler.actions.datapreview,Data Preview,
+		,
+		Category(com.sap.ndb.studio.modeler.navigator,Modeler Navigator,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@24a6e233,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	com.sap.ndb.studio.navigator.context.navigatorview,,,system)
+Binding(CTRL+SHIFT+P,
+	ParameterizedCommand(Command(com.sap.ndb.studio.bi.uibindings.command.datapreview,Data Preview,
+		,
+		Category(com.sap.ndb.studio.bi.uibindings.category,Modeler Keys,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@7eea2742,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	com.sap.ndb.studio.view.ui.editors.ViewMultiPageEditor.context,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2024-05-10 10:21:50.396
+!MESSAGE A conflict occurred for CTRL+SHIFT+V:
+Binding(CTRL+SHIFT+V,
+	ParameterizedCommand(Command(com.sap.ndb.studio.navigator.actions.validate,Validate,
+		Validate,
+		Category(com.sap.ndb.studio.bi.uibindings.category,Modeler Keys,null,true),
+		com.sap.ndb.studio.modeler.command.handlers.ValidateHandler@6b7ff02a,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	com.sap.ndb.studio.navigator.context.navigatorview,,,system)
+Binding(CTRL+SHIFT+V,
+	ParameterizedCommand(Command(com.sap.ndb.studio.bi.uibindings.command.validate,Validate,
+		,
+		Category(com.sap.ndb.studio.bi.uibindings.category,Modeler Keys,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@23d6b621,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	com.sap.ndb.studio.view.ui.editors.ViewMultiPageEditor.context,,,system)
+Binding(CTRL+SHIFT+V,
+	ParameterizedCommand(Command(org.eclipse.jdt.debug.ui.command.OpenFromClipboard,Open from Clipboard,
+		Opens a Java element or a Java stack trace from clipboard,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@7e2c71d4,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2024-05-10 10:21:50.396
+!MESSAGE A conflict occurred for CTRL+SHIFT+A:
+Binding(CTRL+SHIFT+A,
+	ParameterizedCommand(Command(com.sap.ndb.studio.navigator.actions.activate,Activate,
+		Activate,
+		Category(com.sap.ndb.studio.bi.uibindings.category,Modeler Keys,null,true),
+		com.sap.ndb.studio.modeler.command.handlers.ActivateHandler@4c53ea14,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	com.sap.ndb.studio.navigator.context.navigatorview,,,system)
+Binding(CTRL+SHIFT+A,
+	ParameterizedCommand(Command(com.sap.ndb.studio.bi.uibindings.command.activate,Activate,
+		,
+		Category(com.sap.ndb.studio.bi.uibindings.category,Modeler Keys,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@6d88b358,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	com.sap.ndb.studio.view.ui.editors.ViewMultiPageEditor.context,,,system)
+Binding(CTRL+SHIFT+A,
+	ParameterizedCommand(Command(org.eclipse.pde.ui.openPluginArtifact,Open Plug-in Artifact,
+		Open a plug-in artifact in the manifest editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@4277599c,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2024-05-10 10:21:50.396
+!MESSAGE A conflict occurred for CTRL+V:
+Binding(CTRL+V,
+	ParameterizedCommand(Command(com.sap.ndb.studio.modeler.PasteObject,Paste,
+		,
+		Category(com.sap.ndb.studio.bi.uibindings.category,Modeler Keys,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@5486884d,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	com.sap.ndb.studio.navigator.context.navigatorview,,,system)
+Binding(CTRL+V,
+	ParameterizedCommand(Command(com.sap.ndb.studio.bi.uibindings.command.pasteNode,Paste Node,
+		,
+		Category(com.sap.ndb.studio.bi.uibindings.category,Modeler Keys,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@4939e1d8,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	com.sap.ndb.studio.view.ui.panes.Scenario.context,,,system)
+Binding(CTRL+V,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.paste,Paste,
+		Paste from the clipboard,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@610399d4,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.dialogAndWindow,,,system)
+
+!ENTRY org.eclipse.jface 2 0 2024-05-10 10:22:08.247
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2024-05-10 10:22:08.247
+!MESSAGE A conflict occurred for F8:
+Binding(F8,
+	ParameterizedCommand(Command(com.sap.ndb.studio.sql.action.ExecuteSQL,Execute,
+		Execute SQL Statements,
+		Category(com.sap.ndb.studio.sql,SAP HANA Studio SQL Administration Console,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@55e8eeb2,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	com.sap.ndb.studio.sql.executeEditor,,,system)
+Binding(F8,
+	ParameterizedCommand(Command(com.sap.ndb.studio.sql.action.ExecuteSQL,Execute,
+		Execute SQL Statements,
+		Category(com.sap.ndb.studio.sql,SAP HANA Studio SQL Administration Console,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@55e8eeb2,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	com.sap.ndb.studio.sql.catalogEditor,,,system)
+!SESSION 2024-05-13 09:05:41.998 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_172
+java.vendor=SAP AG
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_AU
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.jface 2 0 2024-05-13 15:10:49.671
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2024-05-13 15:10:49.671
+!MESSAGE A conflict occurred for F8:
+Binding(F8,
+	ParameterizedCommand(Command(com.sap.ndb.studio.sql.action.ExecuteSQL,Execute,
+		Execute SQL Statements,
+		Category(com.sap.ndb.studio.sql,SAP HANA Studio SQL Administration Console,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@138173b,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	com.sap.ndb.studio.sql.executeEditor,,,system)
+Binding(F8,
+	ParameterizedCommand(Command(com.sap.ndb.studio.sql.action.ExecuteSQL,Execute,
+		Execute SQL Statements,
+		Category(com.sap.ndb.studio.sql,SAP HANA Studio SQL Administration Console,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@138173b,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	com.sap.ndb.studio.sql.catalogEditor,,,system)

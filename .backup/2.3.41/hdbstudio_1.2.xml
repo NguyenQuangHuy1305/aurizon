@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hdbstudio version="1.2">
+<tree>
+<sapsystem name="PH1:HDBPRDPAN002:01:PAN:"/>
+</tree>
+<sapsystems>
+<sapsystem databasename="PAN" databasetype="USERDB" hostname="hdbprdpan002" instancenumber="1" open="true" secure="false" ssl="false" systemname="PH1" username="">
+<jdbc externally="true" locale="en_AU" validate_crtf="true"/>
+<sapcontrol state="OFF"/>
+</sapsystem>
+</sapsystems>
+</hdbstudio>
